@@ -7,5 +7,6 @@ setup(name='pyglow',
     description='Python wrapper for piglow',
     author='Boeeerb',
     py_modules=['pyglow'],
-    scripts=['scripts/enable_i2c.py']
+    scripts=['scripts/enable_i2c.py'],
+    install_requires=['smbus']
 )
