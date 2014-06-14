@@ -56,10 +56,11 @@ All colors are from 0 (off) to 255 (super duper eye numbing bright!)
 
 ## Installation instructions
 
-## Requirements
+### Install requirements
 
     sudo apt-get install python-smbus
 
+### Install the module
 
 ```python
 sudo python setup.py install
