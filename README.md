@@ -19,10 +19,6 @@ It was started as "PiGlow" by Jason (@Boeeerb https://github.com/Boeeerb/PiGlow)
  - examples/set_leds.py - shows how set_leds() & update_leds() works
 
 
-## Requirements
-
-    sudo apt-get install python-smbus
-
 
 ## Functions
 
@@ -60,35 +56,17 @@ All colors are from 0 (off) to 255 (super duper eye numbing bright!)
 
 ## Installation instructions
 
+### Install requirements
 
-### Preparation
+    sudo apt-get install python-smbus
 
-For instruction hot to setup your Raspberry Pi to use with PyGlow, please see
-https://github.com/pimoroni/piglow#setting-up-your-raspberry-pi
+### Install the module
 
+```python
+sudo python setup.py install
+```
 
-### Downloading the PyGlow module and testing
-
-Now create a directory for it to live in then change to that directory:
-
-    mkdir pyglow
-    cd pyglow
-
-Next get the latest version of PyGlow python module:
-
-    wget https://raw.github.com/benleb/PyGlow/master/pyglow.py
-
-This will give you a file called pyglow.py, this is the module and will do all the hardwork.
-
-Now download the test script to make sure it works
-
-    wget https://raw.github.com/benleb/PyGlow/master/examples/test.py
-
-And run it by typing and setting a number between 0 (off) and 255 (brightest)
-
-    sudo python test.py
-
-If it works successfully you can choose the level of brightness for each color.
+Reboot your pi to enable the i2c modules.
 
 ### Use it on your own
 
